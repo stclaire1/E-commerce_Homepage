@@ -1,0 +1,47 @@
+@layer reset, base;
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@layer reset {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Montserrat", sans-serif;
+    }
+
+    html,
+    body {
+        height: 100%;
+        overflow-x: hidden;
+        font-size: 14px;
+    }
+}
+
+/* variações de cores */
+
+@layer base {
+    :root {
+        --dark-bg-color: #252B42;
+        --light-bg-color: #FFFFFF;
+        --primary-color: #23A6F0;
+        --secondary-color: #2D8BC0BF;
+        --highlitgh-color: #23856D;
+        --hover-text-color: #2A7CC7;
+        --dark-text-color: #252B42;
+        --medium-text-color: #737373;
+        --light-text-color: #FFFFFF;
+        --light-gray: #FAFAFA;
+    }
+}
+
+@layer base {
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
