@@ -10,18 +10,20 @@
 <body>
     <header>
         <div id="fixed-nav">
-            <span>
-                <img src="assets/phone-icon.svg" alt="ícone de telefone">
-                <p>(225) 555-0118</p>
-            </span>
-            <span>
-                <img src="assets/mail-icon.svg" alt="ícone de email">
-                <p>michelle.rivera@example.com</p>
-            </span>
+            <div class="flex-info phone-mail-container">
+                <div class="flex-info">
+                    <img src="assets/phone-icon.svg" alt="ícone de telefone">
+                    <p>(225) 555-0118</p>
+                </div>
+                <div class="flex-info mail-info">
+                    <img src="assets/mail-icon.svg" alt="ícone de email">
+                    <p>michelle.rivera@example.com</p>
+                </div>
+            </div>
             <p>Follow Us  and get a chance to win 80% off</p>
-            <span>
+            <div class="flex-info">
                 <p>Follow Us  :</p>
-                <ul>
+                <ul class="flex-info">
                     <li>
                         <a href="#">
                             <img src="assets/instagram-icon.svg" alt="Ícone clicável do Instagram">
@@ -43,7 +45,7 @@
                         </a>
                     </li>
                 </ul>
-            </span>
+            </div>
         </div>
         <div id="home-nav">
             <a href="#">Bandage</a>
@@ -151,96 +153,150 @@
             </div>
         </section>
         <section id="bestseller-products">
-            <p>Featured Products</p>
+            <p class="bestseller-subtitle">Featured Products</p>
             <h2>Bestseller Products</h2>
-            <p>Problems trying to resolve the conflict between</p>
+            <p class="bestseller-text">Problems trying to resolve the conflict between</p>
             <div id="product-card-grid">
-                <div>
-                    <img src="assets/product-cover-1-180w.png" alt="">
-                    <h1>Graphic Design</h1>
-                    <p>English Department</p>
-                    <p>
+                <div class="product-card">
+                    <img srcset="
+                        assets/product-cover-1-290w.png 290w,
+                        assets/product-cover-1-180w.png 180w" 
+                    sizes=" (max-width: 758px) 290px,
+                            (min-width: 759px) 180px"
+                    src="assets/product-cover-1-180w.png"
+                    alt="">
+                    <h3>Graphic Design</h3>
+                    <p class="text-color">English Department</p>
+                    <p class="price-discount">
                         <span>$16.48</span>
                         <span>$6.48</span>
                     </p>
                 </div>
-                <div>
-                    <img src="assets/product-cover-2-180w.png" alt="">
-                    <h1>Graphic Design</h1>
-                    <p>English Department</p>
-                    <p>
+                <div class="product-card">
+                    <img srcset="
+                        assets/product-cover-2-290w.png 290w,
+                        assets/product-cover-2-180w.png 180w" 
+                    sizes=" (max-width: 758px) 290px,
+                            (min-width: 759px) 180px"
+                    src="assets/product-cover-2-180w.png"
+                    alt="">
+                    <h3>Graphic Design</h3>
+                    <p class="text-color">English Department</p>
+                    <p class="price-discount">
                         <span>$16.48</span>
                         <span>$6.48</span>
                     </p>
                 </div>
-                <div>
+                <div class="product-card">
+                    <img srcset="
+                        assets/product-cover-3-290w.png 290w,
+                        assets/product-cover-3-180w.png 180w" 
+                    sizes=" (max-width: 758px) 290px,
+                            (min-width: 759px) 180px"
+                    src="assets/product-cover-3-180w.png"
+                    alt="">
+                    <h3>Graphic Design</h3>
+                    <p class="text-color">English Department</p>
+                    <p class="price-discount">
+                        <span>$16.48</span>
+                        <span>$6.48</span>
+                    </p>
+                </div>
+                <div class="product-card">
+                    <img srcset="
+                        assets/product-cover-4-290w.png 290w,
+                        assets/product-cover-4-180w.png 180w" 
+                    sizes=" (max-width: 758px) 290px,
+                            (min-width: 759px) 180px"
+                    src="assets/product-cover-4-180w.png"
+                    alt="">
+                    <h3>Graphic Design</h3>
+                    <p class="text-color">English Department</p>
+                    <p class="price-discount">
+                        <span>$16.48</span>
+                        <span>$6.48</span>
+                    </p>
+                </div>
+                <div class="product-card">
+                    <img srcset="
+                        assets/product-cover-5-290w.png 290w,
+                        assets/product-cover-5-180w.png 180w" 
+                    sizes=" (max-width: 758px) 290px,
+                            (min-width: 759px) 180px"
+                    src="assets/product-cover-5-180w.png"
+                    alt="">
+                    <h3>Graphic Design</h3>
+                    <p class="text-color">English Department</p>
+                    <p class="price-discount">
+                        <span>$16.48</span>
+                        <span>$6.48</span>
+                    </p>
+                </div>
+                <div class="product-card">
+                    <img srcset="
+                        assets/product-cover-1-290w.png 290w,
+                        assets/product-cover-1-180w.png 180w" 
+                    sizes=" (max-width: 758px) 290px,
+                            (min-width: 759px) 180px"
+                    src="assets/product-cover-1-180w.png"
+                    alt="">
+                    <h3>Graphic Design</h3>
+                    <p class="text-color">English Department</p>
+                    <p class="price-discount">
+                        <span>$16.48</span>
+                        <span>$6.48</span>
+                    </p>
+                </div>
+                <div class="product-card">
+                    <img srcset="
+                        assets/product-cover-6-290w.png 290w,
+                        assets/product-cover-6-180w.png 180w" 
+                    sizes=" (max-width: 758px) 290px,
+                            (min-width: 759px) 180px"
+                    src="assets/product-cover-6-180w.png"
+                    alt="">
+                    <h3>Graphic Design</h3>
+                    <p class="text-color">English Department</p>
+                    <p class="price-discount">
+                        <span>$16.48</span>
+                        <span>$6.48</span>
+                    </p>
+                </div>
+                <div class="product-card">
+                    <img srcset="
+                        assets/product-cover-7-290w.png 290w,
+                        assets/product-cover-7-180w.png 180w" 
+                    sizes=" (max-width: 758px) 290px,
+                            (min-width: 759px) 180px"
+                    src="assets/product-cover-7-180w.png"
+                    alt="">
+                    <h3>Graphic Design</h3>
+                    <p class="text-color">English Department</p>
+                    <p class="price-discount">
+                        <span>$16.48</span>
+                        <span>$6.48</span>
+                    </p>
+                </div>
+                <div class="product-card">
+                    <img srcset="
+                        assets/product-cover-8-290w.png 290w,
+                        assets/product-cover-8-180w.png 180w" 
+                    sizes=" (max-width: 758px) 290px,
+                            (min-width: 759px) 180px"
+                    src="assets/product-cover-8-180w.png"
+                    alt="">
+                    <h3>Graphic Design</h3>
+                    <p class="text-color">English Department</p>
+                    <p class="price-discount">
+                        <span>$16.48</span>
+                        <span>$6.48</span>
+                    </p>
+                </div>
+                <div class="product-card">
                     <img src="assets/product-cover-3-180w.png" alt="">
                     <h1>Graphic Design</h1>
-                    <p>English Department</p>
-                    <p>
-                        <span>$16.48</span>
-                        <span>$6.48</span>
-                    </p>
-                </div>
-                <div>
-                    <img src="assets/product-cover-4-180w.png" alt="">
-                    <h1>Graphic Design</h1>
-                    <p>English Department</p>
-                    <p>
-                        <span>$16.48</span>
-                        <span>$6.48</span>
-                    </p>
-                </div>
-                <div>
-                    <img src="assets/product-cover-5-180w.png" alt="">
-                    <h1>Graphic Design</h1>
-                    <p>English Department</p>
-                    <p>
-                        <span>$16.48</span>
-                        <span>$6.48</span>
-                    </p>
-                </div>
-                <div>
-                    <img src="assets/product-cover-1-180w.png" alt="">
-                    <h1>Graphic Design</h1>
-                    <p>English Department</p>
-                    <p>
-                        <span>$16.48</span>
-                        <span>$6.48</span>
-                    </p>
-                </div>
-                <div>
-                    <img src="assets/product-cover-6-180w.png" alt="">
-                    <h1>Graphic Design</h1>
-                    <p>English Department</p>
-                    <p>
-                        <span>$16.48</span>
-                        <span>$6.48</span>
-                    </p>
-                </div>
-                <div>
-                    <img src="assets/product-cover-7-180w.png" alt="">
-                    <h1>Graphic Design</h1>
-                    <p>English Department</p>
-                    <p>
-                        <span>$16.48</span>
-                        <span>$6.48</span>
-                    </p>
-                </div>
-                <div>
-                    <img src="assets/product-cover-8-180w.png" alt="">
-                    <h1>Graphic Design</h1>
-                    <p>English Department</p>
-                    <p>
-                        <span>$16.48</span>
-                        <span>$6.48</span>
-                    </p>
-                </div>
-                <div>
-                    <img src="assets/product-cover-3-180w.png" alt="">
-                    <h1>Graphic Design</h1>
-                    <p>English Department</p>
-                    <p>
+                    <p class="text-color">English Department</p>
+                    <p class="price-discount">
                         <span>$16.48</span>
                         <span>$6.48</span>
                     </p>
@@ -350,7 +406,7 @@
             <div class="post">
                 <div class="product-card">
                     <div>
-                        <img src="assets/featured-post-1-210w.png" alt="Céu de fim de tarde com coqueiros na frente">
+                        <img src="assets/featured-post-2-210w.png" alt="Céu de fim de tarde com coqueiros na frente">
                         <p>Sale</p>
                         <div>
                             <button>
