@@ -294,7 +294,7 @@
                 </div>
                 <div class="product-card">
                     <img src="assets/product-cover-3-180w.png" alt="">
-                    <h1>Graphic Design</h1>
+                    <h3>Graphic Design</h3>
                     <p class="text-color">English Department</p>
                     <p class="price-discount">
                         <span>$16.48</span>
@@ -305,10 +305,16 @@
             </div>
         </section>
         <section id="featured-products">
-            <img src="assets/featured-products-512w.png" alt="Foto de duas garotas sorrindo">
-            <div>
-                <p>Featured Products</p>
-                <h1>We love what we do</h1>
+            <img srcset="
+                        assets/featured-products-360w.png 360w,
+                        assets/featured-products-512w.png 512w" 
+                    sizes=" (max-width: 758px) 370px,
+                            (min-width: 759px) 512px"
+                    src="assets/featured-products-512w.png"
+                    alt="Foto de duas garotas sorrindo">
+            <div class="featured-products-text">
+                <p class="featured-products-subtitle">Featured Products</p>
+                <h2>We love<br>what we do</h2>
                 <p>
                     Problems trying to resolve the conflict between 
                     the two major realms of Classical physics: 
