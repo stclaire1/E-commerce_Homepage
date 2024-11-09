@@ -1,4 +1,4 @@
-@layer reset, base, header, clients, bestseller, featured-products, services, featured-posts;
+@layer reset, base, header, clients, bestseller, featured-products, services, featured-posts, footer;
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 @layer reset {
@@ -224,7 +224,7 @@
         margin: 5rem 0;
 
         .services-subtitle {
-            font-weight: 500;
+            font-weight: 600;
             color: var(--medium-text-color);
             font-size: 1.2rem;
         }
@@ -264,6 +264,133 @@
         .service-description {
             width: 100%;
             max-width: 200px;
+            margin: auto;
+        }
+    }
+}
+
+@layer featured-posts {
+
+}
+
+@layer footer {
+    #footer {
+        margin-block-start: 4rem;
+        margin-block-end: 2rem;
+        padding-inline: 2rem;
+
+        #socials, #socials ul, #links {
+            display: flex;
+        }
+
+        #socials {
+            flex-direction: column;
+            align-items: start;
+
+            width: 100%;
+            max-width: fit-content;
+
+            ul {
+                justify-content: space-evenly;
+                align-items: center;
+    
+                li {
+                    padding-inline-end: 1rem;
+                }
+            }
+        }
+
+        .logo-footer {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-block-end: 2rem;
+        }
+
+        a:link, #socials a:visited, #socials a:active {
+            color: var(--dark-text-color);
+        }
+
+        #links {
+            flex-direction: column;
+            margin: 4rem 0;
+
+            .info-list {
+                margin-block-end: 2rem;
+
+                > h3 {
+                    margin-block-end: 20px;
+                }
+
+                li {
+                    font-weight: 700;
+                    margin-block-end: 20px;
+
+                    a, a:link, a:visited, a:active {
+                        color: var(--medium-text-color);
+                        transition: all .3s;
+
+                        &:hover {
+                            color: var(--primary-color);
+                        }
+                    }
+                }
+            }
+            
+            .subscribe-form {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+
+                margin-block-end: 3rem;
+
+                label {
+                    font-weight: bold;
+                    font-size: 1.3rem;
+                }
+
+                .input-group {
+                    display: flex;
+
+                    input[type="email"] {
+                        flex: 1;
+                        padding: 1.2rem;
+                        background-color: #F9F9F9;
+                        border: 1px solid var(--muted-color);
+                        border-top-left-radius: 4px;
+                        border-bottom-left-radius: 4px;
+                        width: 100%;
+
+                        &::placeholder {
+                            font-weight: 600;
+                            color: var(--medium-text-color)
+                        }
+                    }
+
+                    button {
+                        background-color: var(--primary-color);
+                        color: var(--light-text-color);
+                        padding-inline: 1.5rem;
+                        border: none;
+                        border-top-right-radius: 4px;
+                        border-bottom-right-radius: 4px;
+                        font-weight: 500;
+                        cursor: pointer;
+                        transition: all .3s;
+
+                        &:hover {
+                            background-color: var(--hover-text-color);
+                        }
+                    }
+                }
+            }
+        }
+
+        > p {
+            text-align: center;
+            font-weight: 700;
+            color: var(--medium-text-color);
+            width: 100%;
+            max-width: calc(100% - 5rem);
             margin: auto;
         }
     }
