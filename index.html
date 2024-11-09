@@ -99,11 +99,11 @@
         </div>
     </header>
     <main>
-        <section id="hero">
-            <div id="hero-container">
+        <section id="banner">
+            <div id="banner-container">
                 <div id="banner-text-content">
-                    <p>Summer 2020</p>
-                    <h1>New Collection</h1>
+                    <p class="banner-subtitle">Summer 2020</p>
+                    <h1 class="banner-title">New Collection</h1>
                     <p>We know how large objects will act, but things on a small scale.</p>
                     <a href="#">Shop Now</a>
                 </div>
@@ -362,7 +362,13 @@
             <div class="post">
                 <div class="product-card">
                     <div>
-                        <img src="assets/featured-post-1-210w.png" alt="Céu de fim de tarde com coqueiros na frente">
+                        <img srcset="
+                        assets/featured-post-1-330w.png 330w,
+                        assets/featured-post-1-210w.png 210w" 
+                        sizes=" (max-width: 758px) 330px,
+                                (min-width: 759px) 210px"
+                        src="assets/featured-post-1-210w"
+                        alt="">
                         <p>Sale</p>
                         <div>
                             <button>
@@ -421,7 +427,13 @@
             <div class="post">
                 <div class="product-card">
                     <div>
-                        <img src="assets/featured-post-2-210w.png" alt="Céu de fim de tarde com coqueiros na frente">
+                        <img srcset="
+                        assets/featured-post-2-330w.png 330w,
+                        assets/featured-post-2-210w.png 210w" 
+                        sizes=" (max-width: 758px) 330px,
+                                (min-width: 759px) 210px"
+                        src="assets/featured-post-2-210w"
+                        alt="">
                         <p>Sale</p>
                         <div>
                             <button>
