@@ -1,4 +1,4 @@
-@layer reset, base, header, clients, bestseller, featured-products;
+@layer reset, base, header, clients, bestseller, featured-products, services, featured-posts;
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 @layer reset {
@@ -214,6 +214,57 @@
                 font-size: 2.5rem;
                 line-height: 1.3;
             }
+        }
+    }
+}
+
+@layer services {
+    #services {
+        text-align: center;
+        margin: 5rem 0;
+
+        .services-subtitle {
+            font-weight: 500;
+            color: var(--medium-text-color);
+            font-size: 1.2rem;
+        }
+
+        > h2 {
+            text-transform: uppercase;
+            margin: 1rem 0;
+        }
+
+        > p:nth-of-type(2) {
+            width: 100%;
+            max-width: 200px;
+            margin: auto;
+            margin-block-end: 5rem;
+        }
+
+        .service-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            margin-block-end: 7rem;
+
+            img {
+                width: 100%;
+                max-width: 70px;
+                margin: auto;
+            }
+        }
+
+        .service-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 1rem 0;
+        }
+
+        .service-description {
+            width: 100%;
+            max-width: 200px;
+            margin: auto;
         }
     }
 }
