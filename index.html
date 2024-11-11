@@ -357,136 +357,172 @@
             </div>
         </section>
         <section id="featured-posts">
-            <p class="service-title">Practice Advice</p>
+            <p class="service-subtitle">Practice Advice</p>
             <h2>Featured Posts</h2>
-            <div class="post">
-                <div class="product-card">
-                    <div>
-                        <img srcset="
-                        assets/featured-post-1-330w.png 330w,
-                        assets/featured-post-1-210w.png 210w" 
-                        sizes=" (max-width: 758px) 330px,
-                                (min-width: 759px) 210px"
-                        src="assets/featured-post-1-210w"
-                        alt="">
-                        <p>Sale</p>
+            <div class="posts-container">
+                <div class="post">
+                    <div class="product-card">
                         <div>
-                            <button>
-                                <img src="assets/favorite-icon.svg" alt="Ícone clicável para dar like na postagem">
-                            </button>
-                            <button>
-                                <img src="assets/cart-icon.svg" alt="Ícone clicável para adicionar o conteúdo da postagem ao carrinho">
-                            </button>
-                            <button>
-                                <img src="assets/watch-icon.svg" alt="Ícone clicável para deixar o conteúdo da postagem em observação">
-                            </button>
+                            <!-- <img srcset="
+                            assets/featured-post-1-330w.png 330w,
+                            assets/featured-post-1-210w.png 210w" 
+                            sizes=" (max-width: 758px) 330px,
+                                    (min-width: 759px) 210px"
+                            src="assets/featured-post-1-210w"
+                            alt=""> -->
+                            <img src="assets/featured-post-1-210w.png" alt="" class="desktop-content">
+                            <img src="assets/featured-post-1-330w.png" alt="" class="mobile-content">
+                            <span class="desktop-content">Sale</span>
+                            <div class="desktop-content action-icons-list">
+                                <button>
+                                    <img src="assets/favorite-icon-dark.svg" alt="Ícone clicável para dar like na postagem">
+                                </button>
+                                <button>
+                                    <img src="assets/cart-icon-dark.svg" alt="Ícone clicável para adicionar o conteúdo da postagem ao carrinho">
+                                </button>
+                                <button>
+                                    <img src="assets/watch-icon.svg" alt="Ícone clicável para deixar o conteúdo da postagem em observação">
+                                </button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="product-info">
-                    <div>
-                        <p>English Department</p>
-                        <div>
-                            <img src="assets/rating-icon.svg" aria-hidden="true" alt="">
-                            <p>4.9</p>
+                    <div class="product-info">
+                        <ul class="mobile-content">
+                            <li>
+                                <p>Google</p>
+                            </li>
+                            <li>
+                                <p>Trending</p>
+                            </li>
+                            <li>
+                                <p>New</p>
+                            </li>
+                        </ul>
+                        <div class="title-rating-container">
+                            <p class="desktop-content card-subtitle">English Department</p>
+                            <div class="desktop-content rating">
+                                <img src="assets/rating-icon.svg" aria-hidden="true" alt="">
+                                <p>4.9</p>
+                            </div>
                         </div>
-                        <h4>Graphic Design</h4>
-                        <p>We focus on ergonomics and meeting you where you work. It's only a keystroke away.</p>
-                        <div>
+                        <h4 class="desktop-content">Graphic Design</h4>
+                        <h4 class="mobile-content">Loudest à la Madison #1 (L'integral)</h4>
+                        <p class="product-description">We focus on ergonomics and meeting you where you work. It's only a keystroke away.</p>
+                        <div class="desktop-content sales">
                             <img src="assets/sales-icon.svg" aria-hidden="true" alt="">
                             <p>15 Sales</p>
                         </div>
-                        <div>
+                        <div class="desktop-content price">
                             <p>$16.48</p>
                             <p>$6.48</p>
                         </div>
-                        <div class="color-options">
+                        <div class="color-options desktop-content">
                             <span class="color"></span>
                             <span class="color"></span>
                             <span class="color"></span>
                             <span class="color"></span>
                         </div>
-                        <div>
+                        <div class="info-list">
                             <span>
                                 <img src="assets/clock-icon.svg" alt="">
-                                <p>22h...</p>
+                                <p class="desktop-content">22h...</p>
+                                <p class="mobile-content">22 April 2021</p>
                             </span>
-                            <span>
+                            <span class="desktop-content">
                                 <img src="assets/lessons-icon.svg" alt="">
                                 <p>64 Lessons</p>
                             </span>
                             <span>
                                 <img src="assets/progress-icon.svg" alt="">
-                                <p>Progress</p>
+                                <p class="desktop-content">Progress</p>
+                                <p class="mobile-content">10 coments</p>
                             </span>
                         </div>
-                    </div>
-                    <a href="#">Learn More</a>
-                </div>
-            </div>
-            <div class="post">
-                <div class="product-card">
-                    <div>
-                        <img srcset="
-                        assets/featured-post-2-330w.png 330w,
-                        assets/featured-post-2-210w.png 210w" 
-                        sizes=" (max-width: 758px) 330px,
-                                (min-width: 759px) 210px"
-                        src="assets/featured-post-2-210w"
-                        alt="">
-                        <p>Sale</p>
-                        <div>
-                            <button>
-                                <img src="assets/favorite-icon.svg" alt="Ícone clicável para dar like na postagem">
-                            </button>
-                            <button>
-                                <img src="assets/cart-icon.svg" alt="Ícone clicável para adicionar o conteúdo da postagem ao carrinho">
-                            </button>
-                            <button>
-                                <img src="assets/watch-icon.svg" alt="Ícone clicável para deixar o conteúdo da postagem em observação">
-                            </button>
-                        </div>
+                        <!-- <a href="#" class="desktop-button">Learn More</a> -->
+                        <a href="#">Learn More <img src="assets/arrow-rigth.svg" alt=""></a>
                     </div>
                 </div>
-                <div class="product-info">
-                    <div>
-                        <p>English Department</p>
+                <div class="post">
+                    <div class="product-card">
                         <div>
-                            <img src="assets/rating-icon.svg" aria-hidden="true" alt="">
-                            <p>4.9</p>
+                            <!-- <img srcset="
+                            assets/featured-post-2-330w.png 330w,
+                            assets/featured-post-2-210w.png 210w" 
+                            sizes=" (max-width: 758px) 330px,
+                                    (min-width: 759px) 210px"
+                            src="assets/featured-post-1-210w"
+                            alt=""> -->
+                            <img src="assets/featured-post-2-210w.png" alt="" class="desktop-content">
+                            <img src="assets/featured-post-2-330w.png" alt="" class="mobile-content">
+                            <span class="desktop-content">Sale</span>
+                            <div class="desktop-content action-icons-list">
+                                <button>
+                                    <img src="assets/favorite-icon-dark.svg" alt="Ícone clicável para dar like na postagem">
+                                </button>
+                                <button>
+                                    <img src="assets/cart-icon-dark.svg" alt="Ícone clicável para adicionar o conteúdo da postagem ao carrinho">
+                                </button>
+                                <button>
+                                    <img src="assets/watch-icon.svg" alt="Ícone clicável para deixar o conteúdo da postagem em observação">
+                                </button>
+                            </div>
                         </div>
-                        <h4>Graphic Design</h4>
-                        <p>We focus on ergonomics and meeting you where you work. It's only a keystroke away.</p>
-                        <div>
+                    </div>
+                    <div class="product-info">
+                        <ul class="mobile-content">
+                            <li>
+                                <p>Google</p>
+                            </li>
+                            <li>
+                                <p>Trending</p>
+                            </li>
+                            <li>
+                                <p>New</p>
+                            </li>
+                        </ul>
+                        <div class="title-rating-container">
+                            <p class="desktop-content card-subtitle">English Department</p>
+                            <div class="desktop-content rating">
+                                <img src="assets/rating-icon.svg" aria-hidden="true" alt="">
+                                <p>4.9</p>
+                            </div>
+                        </div>
+                        <h4 class="desktop-content">Graphic Design</h4>
+                        <h4 class="mobile-content">Loudest à la Madison #1 (L'integral)</h4>
+                        <p class="product-description">We focus on ergonomics and meeting you where you work. It's only a keystroke away.</p>
+                        <div class="desktop-content sales">
                             <img src="assets/sales-icon.svg" aria-hidden="true" alt="">
                             <p>15 Sales</p>
                         </div>
-                        <div>
+                        <div class="desktop-content price">
                             <p>$16.48</p>
                             <p>$6.48</p>
                         </div>
-                        <div class="color-options">
+                        <div class="color-options desktop-content">
                             <span class="color"></span>
                             <span class="color"></span>
                             <span class="color"></span>
                             <span class="color"></span>
                         </div>
-                        <div>
+                        <div class="info-list">
                             <span>
                                 <img src="assets/clock-icon.svg" alt="">
-                                <p>22h...</p>
+                                <p class="desktop-content">22h...</p>
+                                <p class="mobile-content">22 April 2021</p>
                             </span>
-                            <span>
+                            <span class="desktop-content">
                                 <img src="assets/lessons-icon.svg" alt="">
                                 <p>64 Lessons</p>
                             </span>
                             <span>
                                 <img src="assets/progress-icon.svg" alt="">
-                                <p>Progress</p>
+                                <p class="desktop-content">Progress</p>
+                                <p class="mobile-content">10 coments</p>
                             </span>
                         </div>
+                        <!-- <a href="#" class="desktop-content">Learn More</a> -->
+                        <a href="#">Learn More <img src="assets/arrow-rigth.svg" alt=""></a>
                     </div>
-                    <a href="#">Learn More</a>
                 </div>
             </div>
         </section>
