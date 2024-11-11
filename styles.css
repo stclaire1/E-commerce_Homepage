@@ -88,6 +88,50 @@
         #home-nav {
             display: flex;
         }
+
+        @media (min-width: 768px) {
+            #fixed-nav {
+                display: flex;
+                position: fixed;
+                top: 0;
+                z-index: 1;
+            }
+
+            #home-nav {
+                margin-block-end: 2rem;
+
+                a, a:link, a:visited, a:active {
+                    color: var(--dark-text-color);
+                }
+
+                > a:first-of-type {
+                    font-size: 2rem;
+                    font-weight: 700;
+                }
+
+                margin-block-start: 4rem;
+
+                nav ul {
+                    display: flex;
+                    flex-direction: row;
+
+                    li {
+                        margin-inline-end: 1.5rem;
+                    }
+                }
+
+                nav:nth-of-type(2) ul li a {
+                    display: flex;
+                    align-items: center;
+
+                    color: var(--primary-color);
+
+                    img {
+                        margin-inline-end: 1rem;
+                    }
+                }
+            }
+        }
     }
 }
 
